@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`luke-test`
+This is my first 2.0 element
+
+@demo demo/index.html 
+-->
+
+<dom-module id="luke-test">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'luke-test',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'luke-test',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
