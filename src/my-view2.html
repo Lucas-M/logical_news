@@ -11,8 +11,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="shared-styles.html">
 <link rel="import" href="../bower_components/paper-button/paper-button.html">
-<link rel="import" href="../bower_components/paper-card/paper-card.html">
 <link rel="import" href="../bower_components/luke-test/luke-test.html">
+<link rel="import" href="../bower_components/paper-input/paper-input.html">
 
 
 
@@ -29,44 +29,18 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <div class="card">
       <div class="circle">2</div>
       <h1>Create Facts</h1>
-      <p>Select from the facts below, or create some new facts.</p>
-      <p>Facts are created when you label your fact, and cite your source. With just these 2 items, you can create a fact.</p>
+      <p>Let's create some new facts. You need to label your fact, and cite your source. With just these 2 items, you can create a fact.</p>
       <p>Of course you can add links to photos, videos, and music too.</p>
       <p>Let's start by having you click the 'Creat Fact' button.</p>
+
+      <paper-input label="Name"></paper-input>
+      <paper-input label="Link"></paper-input>
+      <paper-input label="Image Link"></paper-input>
+      <paper-input label="Video Link"></paper-input>
+
       <p><paper-button>Create Fact Now!</paper-button></p>
+      <!-- <p><luke-test></luke-test></p> -->
 
-
-      <p><luke-test></luke-test></p>
-
-<paper-card image="../bower_components/paper-card/demo/house.png">
-  <div class="card-content">
-    <div class="cafe-header">Cafe Basilico
-      <div class="cafe-location cafe-light">
-        <iron-icon icon="communication:location-on"></iron-icon>
-        <span>250ft</span>
-      </div>
-    </div>
-    <div class="cafe-rating">
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-      <iron-icon class="star" icon="star"></iron-icon>
-    </div>
-    <p>$ Italian, Cafe</p>
-    <p class="cafe-light">Small plates, salads &amp; sandwiches in an intimate setting.</p>
-  </div>
-  <div class="card-actions">
-    <div class="horizontal justified">
-      <paper-icon-button icon="icons:event"></paper-icon-button>
-      <paper-button>5:30PM</paper-button>
-      <paper-button>7:30PM</paper-button>
-      <paper-button>9:00PM</paper-button>
-      <paper-button class="cafe-reserve">Reserve</paper-button>
-    </div>
-  </div>
-</paper-card>
-      
     </div>
   </template>
 
